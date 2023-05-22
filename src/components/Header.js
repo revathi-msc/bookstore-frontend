@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { AppBar, Tab, Tabs, Toolbar, Typography } from "@mui/material";
-import LibraryBooksOutlinedIcon from "@mui/icons-material/LibraryBooksOutlined";
 import { NavLink } from "react-router-dom";
 const Header = () => {
   const [value, setValue] = useState();
@@ -10,7 +9,7 @@ const Header = () => {
         <Toolbar>
           <NavLink to="/" style={{ color: "white" }}>
             <Typography>
-              <LibraryBooksOutlinedIcon />
+              <h2>BOOKSTORE</h2>
             </Typography>
           </NavLink>
           <Tabs
@@ -20,9 +19,10 @@ const Header = () => {
             value={value}
             onChange={(e, val) => setValue(val)}
           >
-            <Tab LinkComponent={NavLink} to="/add" label="Add product" />
+            <Tab LinkComponent={NavLink} to="/" label="Home" />
+            <Tab LinkComponent={NavLink} to="/add" label="Add Book" />
             <Tab LinkComponent={NavLink} to="/books" label="Books" />
-            <Tab LinkComponent={NavLink} to="/about" label="About Us" />
+            
           </Tabs>
         </Toolbar>
       </AppBar>
