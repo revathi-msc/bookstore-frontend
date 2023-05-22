@@ -56,12 +56,12 @@ const BookDetail = () => {
             display="flex"
             flexDirection="column"
             justifyContent={"center"}
-            maxWidth={700}
+            maxWidth={600}
             alignContent={"center"}
             alignSelf="center"
             marginLeft={"auto"}
             marginRight="auto"
-            marginTop={10}
+            marginTop={5}
           >
             <FormLabel>Name</FormLabel>
             <TextField
