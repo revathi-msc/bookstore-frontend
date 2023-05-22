@@ -55,17 +55,18 @@ const AddBook = () => {
         display="flex"
         flexDirection="column"
         justifyContent={"center"}
-        maxWidth={700}
+        maxWidth={600}
         alignContent={"center"}
         alignSelf="center"
         marginLeft={"auto"}
         marginRight="auto"
-        marginTop={10}
+        marginTop={5}
       >
         <FormLabel>Name</FormLabel>
         <TextField
           value={inputs.name}
           onChange={handleChange}
+          placeholder="Enter The Name Of The Book"
           margin="normal"
           fullWidth
           variant="outlined"
@@ -75,6 +76,7 @@ const AddBook = () => {
         <TextField
           value={inputs.author}
           onChange={handleChange}
+          placeholder="Enter The Name Of The Author"
           margin="normal"
           fullWidth
           variant="outlined"
@@ -84,6 +86,7 @@ const AddBook = () => {
         <TextField
           value={inputs.description}
           onChange={handleChange}
+          placeholder="Enter The Name Of The Description"
           margin="normal"
           fullWidth
           variant="outlined"
@@ -93,6 +96,7 @@ const AddBook = () => {
         <TextField
           value={inputs.price}
           onChange={handleChange}
+          placeholder="Enter The Price"
           type="number"
           margin="normal"
           fullWidth
@@ -103,6 +107,7 @@ const AddBook = () => {
         <TextField
           value={inputs.image}
           onChange={handleChange}
+          placeholder="Enter The Image URL"
           margin="normal"
           fullWidth
           variant="outlined"
@@ -116,7 +121,7 @@ const AddBook = () => {
         />
 
         <Button variant="contained" type="submit">
-          Add Book
+          SUBMIT
         </Button>
       </Box>
     </form>
