@@ -9,10 +9,10 @@ const Home = () => {
         <Button
           LinkComponent={Link}
           to="/books"
-          sx={{ marginTop: 15, background: "orangered" }}
+          sx={{ marginTop: 10, background: "purple" }}
           variant="contained"
         >
-          <Typography variant="h3">View All products</Typography>
+          <Typography variant="h6">View All products</Typography>
         </Button>
       </Box>
     </div>
